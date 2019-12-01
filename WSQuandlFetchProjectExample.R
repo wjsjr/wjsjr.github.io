@@ -1,3 +1,8 @@
+#This is a project I did in my job at a risk advisory consulting firm. I created a script which queries a list of security 
+#tickers from SQL server, cleans up these tickers and maps them to price data from Quandl. The script creates a table
+#containing daily price data from the last two years for each target security
+
+
 # install.packages(c("Quandl", "dplyr", "RODBC", "tidyverse", "reshape2", "parallel", "doParallel", "snow", "lubridate")) #USE THIS FIRST TIME 
 
 library("Quandl")
