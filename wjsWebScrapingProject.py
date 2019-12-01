@@ -1,5 +1,5 @@
 """
-Built a custom web-scraper for an NYC-based brand consulting firm. Scraper searches 10 leading news sites for a list of terms relating to Giving Tuesday. 
+Built a custom web-scraper for an NYC-based brand consulting firm. Scraper crawls through 10 leading news sites, stores links to any article which contains target terms.
 
 """"
 
