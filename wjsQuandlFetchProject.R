@@ -1,3 +1,5 @@
+#Example of a project I did in my role at financial consulting firm. Uses SQL to search database for list of securities, then maps securities to Quandl Database of historical trading data. Populates SQL table with last two years of daily prices for target securities
+
 # install.packages(c("Quandl", "dplyr", "RODBC", "tidyverse", "reshape2", "parallel", "doParallel", "snow", "lubridate")) #USE THIS FIRST TIME 
 
 library("Quandl")
@@ -16,7 +18,7 @@ dbName <<- ""
 userID <<- ""
 password <<- ""
   
-ImportQuery <- ""
+ImportQuery <- "select SecID, ID_BB_SEC_NUM_DES, FROM [MarketData].[dbo].[vwStaticDataPvt], WHERE [EXCH_CODE] = 'US' AND [MARKET_SECTOR_DES] = 'Equity' "
 
 channel<- odbcConnect (dbName, userID, password)
 quandlFetch <- sqlQuery(channel, ImportQuery, errors = TRUE)
