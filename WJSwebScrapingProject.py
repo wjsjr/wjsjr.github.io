@@ -1,4 +1,10 @@
-  
+"""
+Built a custom web-scraper for an NYC-based brand consulting firm. Scraper searches 10 leading news sites for a list of terms relating to Giving Tuesday. 
+
+""""
+
+
+
 from bs4 import BeautifulSoup
 import requests 
 import re
@@ -196,7 +202,7 @@ print("Scrape Finished. Articles Searched:" + str(scrapeCount))
 
 todayDate = datetime.date.today()
 todayString = todayDate.strftime("%m-%d-%Y")
-filepath = "/Users/willsayre/Desktop/" #Enter desired filepath here: "filepath"
+filepath = #Insert filepath name here
 file = filepath + "/scrapeOutput-" + todayString + ".xlsx"
 outputdf.to_excel(file, sheet_name = 'WebScrape')
 
