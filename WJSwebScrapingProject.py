@@ -37,9 +37,8 @@ term15 = "challenge grant"
 term15 = "Challenge Grant"  
 
 urls = [newYorkPost, chron, abc, usaToday, cnn, classy, fox, dailyMail, nbc]
-#terms = {term1:[0], term2:[0], term3:[0], term4:[0], term5:[0], term6:[0], term7:[0], term8:[0], term9:[0], term10:[0],term11:[0], term12:[0], term13:[0], term14:[0]}
+terms = {term1:[0], term2:[0], term3:[0], term4:[0], term5:[0], term6:[0], term7:[0], term8:[0], term9:[0], term10:[0],term11:[0], term12:[0], term13:[0], term14:[0]}
 random.seed(1)
-terms = {'Mcgahn':[0]}
 scrapeCount = 0
 
 for url in urls:
