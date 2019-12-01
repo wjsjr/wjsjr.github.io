@@ -202,7 +202,7 @@ print("Scrape Finished. Articles Searched:" + str(scrapeCount))
 
 todayDate = datetime.date.today()
 todayString = todayDate.strftime("%m-%d-%Y")
-filepath = #Insert filepath name here
+filepath = #Insert filepath here
 file = filepath + "/scrapeOutput-" + todayString + ".xlsx"
 outputdf.to_excel(file, sheet_name = 'WebScrape')
 
