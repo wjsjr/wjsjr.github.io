@@ -1,3 +1,6 @@
+#For UVA's Comm 4559: Business Analytics with R. This was final project for course. 
+#Used Telecom Churn Dataset from Kagglehttps://www.kaggle.com/dileep070/logisticregression-telecomcustomer-churmprediction 
+
 
 # ---------
 # Read Data
