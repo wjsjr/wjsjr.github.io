@@ -4,8 +4,7 @@
  * 
  * Tree node that has two children: left and right
  * 
- * @author YOURID
- * @param <Comparable> The type of data this tree node stores
+ * @author William Sayre
  */
 public class TreeNode<T extends Comparable<T>> {
 
