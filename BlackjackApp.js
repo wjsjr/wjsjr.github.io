@@ -1,5 +1,5 @@
 /*
-Built a BlackJack app using React.js
+Created a blackjack app using React.js
 */
 
 import React, { Component } from 'react';
