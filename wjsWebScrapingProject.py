@@ -1,5 +1,6 @@
 """
-Built a custom web-scraper for an NYC-based brand consulting firm. Scraper crawls through 10 leading news sites, stores links to any article which contains target terms.
+Built a custom web-scraper for an NYC-based brand consulting firm. Scraper crawls through the articles of 10 leading news sites, stores a link to every article which
+contains target string. Output table is exported as CSV to users desktop.
 
 """"
 
