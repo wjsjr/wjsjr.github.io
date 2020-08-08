@@ -1,5 +1,5 @@
 #This is a project I worked in my job at a risk advisory consulting firm. I created a script which queries a list of security 
-#tickers from my firms SQL server, cleans up these tickers and maps them to price data provided by Quandl. The script creates a table
+#tickers from a SQL database, cleans up these tickers and maps them to price data provided by Quandl. The script creates a table
 #containing daily price data from the last two years for each target security.
 
 
