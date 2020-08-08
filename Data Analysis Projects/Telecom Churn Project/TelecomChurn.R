@@ -1,6 +1,7 @@
 
 # ---------
-# Read Data
+#For UVA's Comm 4559: Business Analytics with R, taught by Dr David Dobolyi. This was final project for course. 
+#Used Telecom Churn Dataset from Kagglehttps://www.kaggle.com/dileep070/logisticregression-telecomcustomer-churmprediction 
 # ---------
 
 setwd("~/Desktop/COMM 4559/Project")
