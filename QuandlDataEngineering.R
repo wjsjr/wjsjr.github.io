@@ -137,7 +137,7 @@ tickerChunks <- split(tickers, ceiling(seq_along(tickers)/chunkSize))#breaks Tic
 parallelOutput <- list()#Accumulator 
 parallelOutput <- foreach(i = 1:length(tickerChunks)) %dopar% {
   library("Quandl")
-  APIKEY <<- "shc295zGxn7d9nUUSfg3" 
+  APIKEY <<- "" 
   Quandl.api_key(APIKEY)
   Quandl.datatable('SHARADAR/SEP', date.gte = StartDate, date.lte = EndDate, ticker = factor(tickerChunks[[i]]), paginate = TRUE)#Iterates through each chunk, plugs chunk into quandl.datatable function and stores output in parallelOutput list. This is where parallel cores save time. Instead of looping sequentially, each core can run simultaneously. So if you have 3 cores, index 1, 2 and 3 will run at same time. Then index 4, 5, 6 ...
 }
