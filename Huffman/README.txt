@@ -1,3 +1,7 @@
+What is this?
+	This was the final project for Advanced Programming, a class I took at UChicago in the Fall of 2020. I implemented a huffman coder and decoder using C. I include a .txt file for testing, but this program works to decode any .txt file containing visible ASCI characters.
+
+
 How to Run?
 	make
 	./huffman
