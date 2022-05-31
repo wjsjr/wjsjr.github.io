@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" id="a71d83f6-9eef-4a95-931a-56379bea9d07" customName="EMR Cluster" nameFormat="CUSTOM">
+        <option name="customName" value="EMR Cluster" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

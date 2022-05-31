@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="703a3c87-1173-4a9f-869c-f57992dc75a6" name="EMR Cluster">
+        <fileTransfer rootFolder="/home/hadoop" accessType="SFTP" host="ec2-3-144-71-8.us-east-2.compute.amazonaws.com" port="22" sshConfigId="24ca5a00-4eae-4fd0-b14f-544c56641f41" sshConfig="newSSH" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

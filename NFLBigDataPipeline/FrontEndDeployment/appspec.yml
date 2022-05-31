@@ -1,0 +1,38 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /src
+    destination: /home/wjsjr/CodeDeploy/flight_and_weather
+
+permissions:
+  - object: /home/wjsjr/CodeDeploy/flight_and_weather
+    pattern: "**"
+    owner: wjsjr
+    group: wjsjr
+
+  - object: /home/wjsjr/CodeDeploy
+    pattern: "flight_and_weather"
+    owner: wjsjr
+    group: wjsjr
+    type:
+      - directory
+
+hooks:
+  ApplicationStop:
+    - location: bin/application_stop.sh
+      timeout: 15
+      runas: wjsjr
+  BeforeInstall:
+    - location: bin/before_install.sh
+      timeout: 120
+      runas: wjsjr
+  AfterInstall:
+    - location: bin/after_install.sh
+      timeout: 1200
+      runas: wjsjr
+  ApplicationStart:
+    - location: bin/application_start.sh
+      timeout: 120
+      runas: wjsjr
+
